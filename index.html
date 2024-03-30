@@ -8,6 +8,9 @@
   <title>Frontend Mentor | Stats preview card component</title>
 
   <style>
+    footer{
+      background-color: var(--Verydarkblue);
+    }
     .attribution { 
       font-size: 11px; 
       text-align: center;
@@ -15,7 +18,9 @@
       align-items: center; 
     }
     .attribution a { 
-      color: hsl(228, 45%, 44%); 
+      color: var(--White); 
+      text-decoration: none
+      ;
     }
   </style>
 </head>
@@ -34,27 +39,28 @@
           </p>
         </div>
 
-        <div class="numbers">
-          <div class="comp">
-            <h2>10k+</h2>
-            <p>companies</p>
-          </div>
-
-          <div class="temp">
-            <h3>314</h3>
-            <p>templates</p>
-          </div>
-
-          <div class="queri">
-            <h4>12m+</h4>
-            <p>queries</p>
-          </div>
+        <div class="seconds">
+          <div class="numbers">
+            <div class="comp">
+              <h2>10k+</h2>
+              <p>companies</p>
+            </div>
+            <div class="temp">
+              <h3>314</h3>
+              <p>templates</p>
+            </div>
+            <div class="queri">
+              <h4>12m+</h4>
+              <p>queries</p>
+            </div>
+        </div>
 
         </div>
 
       </div>
-      
+
       <div class="right">
+        <img src="./images/image-header-mobile.jpg" alt="">
       </div>
   </section>
 </main>
