@@ -151,8 +151,8 @@ footer p {
 }
 @media only screen and (min-width: 320px) and (min-height: 552px) {
 	main {
-		height: 105vh;
-		padding-top: 30px;
+		height:115vh;
+		padding-top: 50px;
 	}
 	section {
 		height: fit-content;
@@ -200,6 +200,8 @@ footer p {
 @media only screen and (min-width: 992px) {
 	section {
 		flex-direction: row;
+		border-radius: 0px 12px 12px 0px;
+		padding-bottom: 0;
 	}
 	.first {
 		display: flex;
@@ -212,7 +214,7 @@ footer p {
 		font-size: 30px;
 	}
 	.first p {
-		padding-top: 20px;
+		padding-top: 40px;
 		width: 96%;
 		font-family: "inter1";
 		font-size: 18px;
@@ -220,25 +222,55 @@ footer p {
 	.left {
 		display: flex;
 		text-align: left;
-		padding-left: 30px;
-        padding-top: 80px;
+		padding-left: 50px;
         width: 80%;
-        gap: 80px;
+        gap: 50px;
 	}
 	.left .seconds .numbers {
 		display: flex;
 		justify-content: flex-start;
+		margin-left: -17px;
 	}
 	span {
 		color: var(--Softviolet);
 	}
 	.right img {
 		height: 70vh;
+		width: 100%;
 		border-radius: 0px 12px 12px 0px;
 	}
 	.right::before {
 		height: 70vh;
-		width: 42%;
+		width: 41.4%;
+		border-radius: 0px 12px 12px 0px;
+	}
+}
+@media only screen and (min-width: 1024px) and (min-height:600px) {
+	.first {
+		padding-top: 0;
+	}
+	.first h1 {
+		width: 90%;
+		font-size: 35px;
+		padding-top: 100px;
+	}
+	.first p {
+		padding-top: 40px;
+		width: 96%;
+		font-family: "inter1";
+		font-size: 18px;
+	}
+	.left {
+        border: 2px solid red;
+	}
+	.right img {
+		height: 70vh;
+		width: 100%;
+		border-radius: 0px 12px 12px 0px;
+	}
+	.right::before {
+		height: 70vh;
+		width: 41.4%;
 		border-radius: 0px 12px 12px 0px;
 	}
 }
