@@ -41,21 +41,21 @@
 
         <div class="seconds">
           <div class="numbers">
-            <div class="comp counter">
-              <h2 class="count" data-target="10">
-                0k+
+            <div class="counter comp">
+              <h2 id="A" class="count" data-target="10000">
+                0
               </h2>
               <p>companies</p>
             </div>
-            <div class="temp counter">
+            <div class="counter temp">
               <h3 class="count" data-target="314">
                 0
               </h3>
               <p>templates</p>
             </div>
-            <div class="queri counter">
-              <h4 class="count" data-target="12">
-                0m+
+            <div class="counter queri">
+              <h4 id="C" class="count" data-target="12000000">
+                0
               </h4>
               <p>queries</p>
             </div>
@@ -83,7 +83,7 @@
   <script>
 const counts = 
   document.querySelectorAll('.count');
-  const speed = 97;
+  const speed = 200;
 
   counts.forEach((counter)=>{
     function updata () {
@@ -91,13 +91,22 @@ const counts =
       const count = Number(counter.innerText)
       const inc = target / speed
 
-      if () {
-        
+      if (count < target) {
+        counter.innerText = Math.floor(inc + count)
+        setTimeout(updata,1)
+      }else{
+        counter.innerText = target
       }
     }
     updata()
   })
 
+  setTimeout(() => {
+    const A = document.getElementById('A');
+  A.innerText = "10K+";
+    const C = document.getElementById('C');
+  C.innerText = "12M+";
+  }, 2200);
   </script>
 </body>
 </html>
