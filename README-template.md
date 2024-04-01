@@ -14,7 +14,7 @@
 -Cristiano-Miguel-DCodeMaster
 
 ## Acknowledgments
-- The real acknowledgments are for The Frontendmentor Challengers and for myself
+- The real acknowledgments are for The Frontendmentor Challengers and for myself.
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
 
