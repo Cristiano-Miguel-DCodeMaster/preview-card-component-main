@@ -334,8 +334,14 @@ h4 {
 	main{
 		height: 100vh;
 	}
+	.left{
+		margin-top: -8px;
+	}
 	.first h1 {
 		width: 80%;
+	}
+	.left .seconds .numbers {
+		gap: 40px;
 	}
 	.right{
 		width: 80%;

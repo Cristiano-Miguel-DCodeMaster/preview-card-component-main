@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="hsl(277, 97%, 35%)">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/style.css">
   <title>Frontend Mentor | Stats preview card component</title>
@@ -40,16 +41,22 @@
 
         <div class="seconds">
           <div class="numbers">
-            <div class="comp">
-              <h2>10k+</h2>
+            <div class="comp counter">
+              <h2 class="count" data-target="10">
+                0k+
+              </h2>
               <p>companies</p>
             </div>
-            <div class="temp">
-              <h3>314</h3>
+            <div class="temp counter">
+              <h3 class="count" data-target="314">
+                0
+              </h3>
               <p>templates</p>
             </div>
-            <div class="queri">
-              <h4>12m+</h4>
+            <div class="queri counter">
+              <h4 class="count" data-target="12">
+                0m+
+              </h4>
               <p>queries</p>
             </div>
         </div>
@@ -72,5 +79,25 @@
       <a href="#">DCode Master</a>.
     </div>
   </footer>
+
+  <script>
+const counts = 
+  document.querySelectorAll('.count');
+  const speed = 97;
+
+  counts.forEach((counter)=>{
+    function updata () {
+      const target = Number(counter.getAttribute('data-target'))
+      const count = Number(counter.innerText)
+      const inc = target / speed
+
+      if () {
+        
+      }
+    }
+    updata()
+  })
+
+  </script>
 </body>
 </html>
