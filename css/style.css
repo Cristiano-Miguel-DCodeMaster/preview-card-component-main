@@ -28,16 +28,12 @@
 	display: none;
 }
 @font-face {
-	font-family: "inter1";
-	src: url(/static/Inter-Regular.ttf);
+	font-family: inter;
+	src: url(/fonts/Inter[slnt\,wght].ttf);
 }
 @font-face {
-	font-family: "inter2";
-	src: url(/static/Inter-SemiBold.ttf);
-}
-@font-face {
-	font-family: "inter3";
-	src: url(/static/Inter-Bold.ttf);
+	font-family: lexenddeca;
+	src: url(/fonts/LexendDeca[wght].ttf);
 }
 main {
 	width: 100%;
@@ -54,7 +50,7 @@ section {
 }
 .first h1 {
 	color: var(--White);
-	font-family: inter3;
+	font-family: inter;
 	width: 70%;
 }
 .left p {
@@ -62,20 +58,20 @@ section {
 		--Slightlytransparentwhite
 	);
 	font-size: 15px;
+	font-family: lexenddeca;
 }
 .left h2,
 h3,
 h4 {
 	color: var(--White);
 	font-size: 22px;
-	font-family: "Franklin Gothic Medium",
-		"Arial Narrow", Arial, sans-serif;
+	font-family: inter;
 }
 .left .seconds p {
 	text-transform: uppercase;
 }
 footer {
-	position: relative;
+	position: fixed;
 	width: 100%;
 	justify-content: center;
 	align-items: center;
@@ -106,9 +102,8 @@ footer p {
 		width: 90%;
 	}
 	.first p {
-		padding-top: 20px;
+		padding-top: 15px;
 		width: 100%;
-		font-family: "inter1";
 	}
 	.left {
 		display: flex;
@@ -125,7 +120,6 @@ footer p {
 	.left h2,
 	h3,
 	h4 {
-		font-family: "inter3";
 		text-transform: uppercase;
 		padding-bottom: 4px;
 	}
@@ -151,11 +145,17 @@ footer p {
 }
 @media only screen and (min-width: 320px) and (min-height: 552px) {
 	main {
-		height:115vh;
+		height: fit-content;
 		padding-top: 50px;
+		padding-bottom: 50px;
 	}
 	section {
 		height: fit-content;
+	}
+	.left h2,
+	h3,
+	h4 {
+		font-size: 16px;
 	}
 	.right img {
 		height: 40vh;
@@ -169,7 +169,7 @@ footer p {
 		width: 70%;
 	}
 	.first p {
-		width: 80%;
+		width: 85%;
 	}
 	.right img {
 		height: 30vh;
@@ -180,7 +180,7 @@ footer p {
 }
 @media only screen and (min-width: 375px) and (min-height: 956px) {
 	main {
-		height:100vh;
+		height: 100vh;
 		padding-top: 10px;
 	}
 	.first h1 {
@@ -206,10 +206,14 @@ footer p {
 	}
 }
 @media only screen and (min-width: 992px) {
+	main {
+		height: 100vh;
+	}
 	section {
 		flex-direction: row;
 		border-radius: 12px;
 		padding-bottom: 0;
+		height: 60vh;
 	}
 	.first {
 		display: flex;
@@ -223,38 +227,43 @@ footer p {
 	}
 	.first p {
 		padding-top: 40px;
-		width: 96%;
-		font-family: "inter1";
-		font-size: 18px;
+		width: 80%;
+		font-size: 14px;
 	}
 	.left {
 		display: flex;
 		text-align: left;
 		padding-left: 50px;
-        width: 80%;
-        gap: 50px;
+		width: 80%;
+		gap: 50px;
+		margin-top: 40px;
+	}
+	.left h2,
+	h3,
+	h4 {
+		font-size: 22px;
 	}
 	.left .seconds .numbers {
 		display: flex;
 		justify-content: flex-start;
 		margin-left: -17px;
-		gap: 60px;
+		gap: 20px;
 	}
 	span {
 		color: var(--Softviolet);
 	}
 	.right img {
-		height: 70vh;
+		height: 60vh;
 		width: 100%;
 		border-radius: 0px 12px 12px 0px;
 	}
 	.right::before {
-		height: 70vh;
-		width: 41.4%;
+		height: 60vh;
+		width: 37.8%;
 		border-radius: 0px 12px 12px 0px;
 	}
 }
-@media only screen and (min-width: 1024px) and (min-height:600px) {
+@media only screen and (min-width: 1024px) and (min-height: 600px) {
 	.first {
 		padding-top: 0;
 	}
@@ -265,25 +274,24 @@ footer p {
 	}
 	.first p {
 		padding-top: 40px;
-		width: 96%;
-		font-family: "inter1";
-		font-size: 18px;
+		width: 75%;
+		font-size: 14px;
 	}
 	.left {
-    margin-top: -55px;
+		margin-top: -70px;
 	}
 	.right img {
-		height: 70vh;
+		height: 60vh;
 		width: 100%;
 		border-radius: 0px 12px 12px 0px;
 	}
 	.right::before {
-		height: 70vh;
-		width: 36.2%;
+		height: 60vh;
+		width: 33.2%;
 		border-radius: 0px 12px 12px 0px;
 	}
 }
-@media only screen and (min-width: 1024px) and (min-height:880px) {
+@media only screen and (min-width: 1024px) and (min-height: 880px) {
 	.first h1 {
 		width: 85%;
 		font-size: 35px;
@@ -292,22 +300,22 @@ footer p {
 		width: 90%;
 	}
 	.left {
-    margin-top: 50px;
+		margin-top: 50px;
 	}
 	.left h2,
-h3,
-h4 {
-	font-size: 30px;
-}
-	.right{
+	h3,
+	h4 {
+		font-size: 30px;
+	}
+	.right {
 		width: 90%;
 	}
 	.right::before {
 		width: 42.4%;
 	}
 }
-@media only screen and (min-width: 1200px){
-	.left{
+@media only screen and (min-width: 1200px) {
+	.left {
 		padding-left: 80px;
 	}
 	.first {
@@ -330,29 +338,35 @@ h4 {
 		border-radius: 0px 12px 12px 0px;
 	}
 }
-@media only screen and (min-width: 1272px) and (min-height:645px){
-	main{
+@media only screen and (min-width: 1272px) and (min-height: 645px) {
+	main {
 		height: 100vh;
 	}
-	.left{
-		margin-top: -8px;
+	.left {
+		margin-top: -55px;
 	}
 	.first h1 {
 		width: 80%;
 	}
+	.first p{
+		width: 70%;
+	}
 	.left .seconds .numbers {
 		gap: 40px;
 	}
-	.right{
+	.right {
 		width: 80%;
 	}
+	.right img{
+		height: 60vh;
+	}
 	.right::before {
-		height: 70vh;
+		height: 60vh;
 		width: 39.4%;
 		border-radius: 0px 12px 12px 0px;
 	}
 }
-@media only screen and (min-width: 1400px){
+@media only screen and (min-width: 1400px) {
 	.first h1 {
 		width: 80%;
 		font-size: 40px;
@@ -361,11 +375,11 @@ h4 {
 		width: 80%;
 	}
 	.left h2,
-h3,
-h4 {
-	font-size: 30px;
-}
-	.right{
+	h3,
+	h4 {
+		font-size: 30px;
+	}
+	.right {
 		width: 80%;
 	}
 	.right img {
@@ -379,19 +393,19 @@ h4 {
 		border-radius: 0px 12px 12px 0px;
 	}
 }
-@media only screen and (min-width: 1440px) and (min-height:800px){
-	section{
+@media only screen and (min-width: 1440px) and (min-height: 800px) {
+	section {
 		width: 80%;
 		height: 62vh;
 	}
-	.left{
+	.left {
 		margin-top: 0px;
 	}
 	.left h2,
-h3,
-h4 {
-	font-size: 25px;
-}
+	h3,
+	h4 {
+		font-size: 25px;
+	}
 	.right img {
 		height: 62vh;
 		width: 100%;
@@ -402,31 +416,31 @@ h4 {
 		height: 62vh;
 	}
 }
-@media only screen and (min-width: 2560px){
-	section{
+@media only screen and (min-width: 2560px) {
+	section {
 		width: 70%;
 		height: 70vh;
 	}
-	.left{
+	.left {
 		margin-top: -50px;
 		padding-left: 90px;
 	}
 	.left h2,
-h3,
-h4 {
-	font-size: 45px;
-}
-.first h1{
-	width: 90%;
-	font-size: 68px;
-}
-.first p{
-	font-size: 26px;
-	width: 70%;
-}
-.left .seconds .numbers {
-	gap: 100px;
-}
+	h3,
+	h4 {
+		font-size: 45px;
+	}
+	.first h1 {
+		width: 90%;
+		font-size: 68px;
+	}
+	.first p {
+		font-size: 26px;
+		width: 70%;
+	}
+	.left .seconds .numbers {
+		gap: 100px;
+	}
 	.right img {
 		height: 70vh;
 		width: 100%;
