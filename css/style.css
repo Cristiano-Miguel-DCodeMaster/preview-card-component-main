@@ -291,6 +291,29 @@ footer p {
 		border-radius: 0px 12px 12px 0px;
 	}
 }
+@media only screen and (min-width: 1024px) and (min-height: 767px) {
+	.first h1 {
+		width: 85%;
+		font-size: 31px;
+	}
+	.first p {
+		width: 90%;
+	}
+	.left {
+		margin-top: -20px;
+	}
+	.left h2,
+	h3,
+	h4 {
+		font-size: 20px;
+	}
+	.right {
+		width: 90%;
+	}
+	.right::before {
+		width: 42.4%;
+	}
+}
 @media only screen and (min-width: 1024px) and (min-height: 880px) {
 	.first h1 {
 		width: 85%;
@@ -352,7 +375,7 @@ footer p {
 		width: 70%;
 	}
 	.left .seconds .numbers {
-		gap: 40px;
+		gap: 20px;
 	}
 	.right {
 		width: 80%;
@@ -401,6 +424,10 @@ footer p {
 	.left {
 		margin-top: 0px;
 	}
+	.first p {
+		width: 75%;
+		font-size: 16px;
+	}
 	.left h2,
 	h3,
 	h4 {
@@ -432,10 +459,10 @@ footer p {
 	}
 	.first h1 {
 		width: 90%;
-		font-size: 68px;
+		font-size: 60px;
 	}
 	.first p {
-		font-size: 26px;
+		font-size: 24px;
 		width: 70%;
 	}
 	.left .seconds .numbers {
