@@ -1,5 +1,5 @@
  ## Screenshot
-  (./images/Screenshot (74).png)
+  (/images/Screenshot (74).png)
 
 ## My process
 -The Process enhanced my abilities with json files and fetching with Javascript
